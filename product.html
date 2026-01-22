@@ -15,7 +15,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -33,11 +33,30 @@
         </ul>
     </nav>
 
+    <!--SideNavbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 ease-in-out;" style="width: 50%; height: 100vh; right: -50%;" >
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+         <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+
     <!--Our products-->
     <section class="bg-green-100 text-center p-4">
         <h1 class="font-bold text-3xl mt-5">Our Products</h1>
-        <input placeholder="Search for product" class="border border-black p-2 m-3" style="width: 70%;">
-        <div class="grid grid-cols-2 p-4 m-3 md:grid-cols-4 gap-2">
+        <input id="search" placeholder="Search for product" class="border border-black p-2 m-3" style="width: 70%;">
+        <div id="product-container" class="grid grid-cols-2 p-4 m-3 md:grid-cols-4 gap-2">
             <div>
                 <img src="./images/bestseller_1.jpg" alt="image"
                     class="inline hover:shadow-xl transform hover:translate-y-2 border-4 border-green-500">
@@ -100,6 +119,7 @@
         </div>
 
     </section>
+    <script src="product.js"></script>
 </body>
 
 </html>

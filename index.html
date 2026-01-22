@@ -15,7 +15,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -32,6 +32,24 @@
             </li>
         </ul>
     </nav>
+
+    <!--SideNavbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 ease-in-out;" style="width: 50%; height: 100vh; right: -50%;" >
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+         <ul class="flex flex-col items-center gap-10 text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
 
     <!--Header Section-->
     <section class="bg-green-100 p-1">
@@ -169,7 +187,7 @@
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
         <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
         <br>
-        <button class="bg-black text-white m-1 underline p-3 hover:bg">Subscribe</button>
+        <button class="bg-black text-white m-1 underline p-3">Subscribe</button>
     </section>
 
     <!--Footer-->
@@ -187,6 +205,7 @@
 
     </section>
 
+    <script src="index.js"></script>
 </body>
 
-</html>
+</html> 
